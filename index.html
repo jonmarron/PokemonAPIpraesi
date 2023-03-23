@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c1a23ee426.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="progress-pikachu">
+      <img
+        src="https://media.tenor.com/fSsxftCb8w0AAAAi/pikachu-running.gif"
+        alt=""
+      />
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <section class="welcome" id="slide1">
+      <div class="content">
+        <h1>WELCOME</h1>
+        <h2>
+          We are <em><strong>Marian</strong></em> and
+          <em><strong>Jon</strong></em>
+        </h2>
+      </div>
+      <a href="#slide2"><button>next</button></a>
+    </section>
+    <section class="agenda" id="slide2">
+      <div class="content">
+        <h1>Agenda</h1>
+
+        <!-- a Pokemon React App - Fetching Pokemon Data from POkeApi - render Render selected Data - Simulate finding, fighting and catching pokemon -->
+
+        <h2>What we did (& how)</h2>
+        <!-- DAY 1: Fetch data & render locations -->
+        <!-- DAY 2: selecting your first pokemon & create grid for collection of pokemons  -->
+        <!-- DAY 3: Finding a random pokemon from the selected location and rendering the battle screen 
+                url our berechnung: <iframe src="https://pastebin.com/embed_iframe/pfjWpUXX?theme=dark" style="border:none;width:100%"></iframe>
+                url hourney berechnung:<iframe src="https://pastebin.com/embed_iframe/CsD3kL6L?theme=dark" style="border:none;width:100%"></iframe>                
+            -->
+        <!-- DAY 4: Added little gimmicks to the app and built the presentation -->
+
+        <h2>Conclusion</h2>
+        <!-- approached with more structure and focused on the MVP, and built features after  -->
+        <!-- want to improve: Documenting project progress while coding, defining week steps in an agile was, like kanban -->
+
+      </div>
+      <div class="links">
+        <a href="#slide1"
+          ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
+        ></a>
+        <a href="#slide3"><button>next</button></a>
+      </div>
+    </section>
+    <section class="game" id="slide3">
+      <div class="content">
+        <h1>What we did</h1>
+        
+      </div>
+      <div class="links">
+        <a href="#slide2"
+          ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
+        ></a>
+        <a href="#slide4"><button>next</button></a>
+      </div>
+    </section>
+   
+     
+    <section class="code-1" id="slide4">
+      <div class="content">
+        <h1>Monday</h1>
+        <div class="APIs">
+          <div class="weatherAPIcontent">
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"
+              alt="API logo"
+            />
+            <h3>Fetch 20 Locations</h3>
+            <div class="collected">
+              <h3>Fetch first 20 Pokemon</h3>
+              
+            </div>
+          </div>
+          <div class="pexelsAPIcontent">
+            <img
+              src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png"
+              alt="API logo"
+            />
+            <div class="collected">
+              <h3>Render with React</h3>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <a href="#slide3"
+          ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
+        ></a>
+        <a href="#slide5"><button>next</button></a>
+      </div>
+    </section>
+    <section class="live" id="slide5">
+        <iframe src="http://localhost:5173" frameborder="0"></iframe>
+        <div class="links">
+            <a href="#slide4"
+              ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
+            ></a>
+            <a href="#slide6"><button>next</button></a>
+          </div>
+    </section>
+    <section class="code-1" id="slide6">
+        <div class="content">
+            <h1>Tuesday</h1>
+            <h2>Let's find some Pokemons!</h2>
+            <ul>
+                <li>Locations disappear</li>
+                <li>Own pokemon selection appears</li>
+            </ul>
+        </div>
+        <div class="links">
+            <a href="#slide5"><button class="back"><i class="fa-solid fa-arrow-left"></i></button></a>
+            <a href="#slide7"><button>next</button></a>
+        </div>
+    </section>
+    <section class="live" id="slide7">
+        <iframe src="http://localhost:5173" frameborder="0"></iframe>
+        <div class="links">
+            <a href="#slide6"
+              ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
+            ></a>
+            <a href="#slide8"><button>next</button></a>
+          </div>
+    </section>
+    <section class="code-1" id="slide8">
+        <div class="content">
+            <h1>Wednesday</h1>
+            <h2>A wild Pokemon appeared!</h2>
+            <ul>
+                <li>Hide Pokemon selection</li>
+                <li>Show fight screen with chosen and wild pokemon</li>
+            </ul>
+        </div>
+        <div class="links">
+            <a href="#slide7"><button class="back"><i class="fa-solid fa-arrow-left"></i></button></a>
+            <a href="#slide9"><button>next</button></a>
+        </div>
+    </section>
+    <section class="live" id="slide9">
+        <iframe src="http://localhost:5173" frameborder="0"></iframe>
+        <div class="links">
+            <a href="#slide8"
+              ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
+            ></a>
+            <a href="#slide10"><button>next</button></a>
+          </div>
+    </section>
+    <section class="code-1" id="slide10">
+        <div class="content">
+            <h1>Thursday</h1>
+            <h2>Polishing</h2>
+            <ul>
+                <li>Added some additional features</li>
+                <li>Created the presentation</li>
+            </ul>
+        </div>
+        <div class="links">
+            <a href="#slide9"><button class="back"><i class="fa-solid fa-arrow-left"></i></button></a>
+            <a href="#slide11"><button>next</button></a>
+        </div>
+    </section>
+    <section class="live" id="slide11">
+        <iframe src="http://localhost:5173" frameborder="0"></iframe>
+        <div class="links">
+            <a href="#slide10"
+              ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
+            ></a>
+            <a href="#slide12"><button>next</button></a>
+          </div>
+    </section>
+    <section class="code-2" id="slide12">
+      <div class="content" id="conclusion">
+        <div>
+          <h1>Conclusion</h1>
+          <h2>All in all satisfied</h2>
+          <ul>
+              <li>+ Worked with more structure</li>
+              <li>+ Focus on base tasks</li>
+              <li>+ More communication</li>
+              <li>+ Pair coding</li>
+              <li><br></li>
+              <li>- Define tasks and subtasks for Kanban</li>
+              <li>- Mix of Pair and Parallel Programming</li>
+              <li>- Documenting project progress while coding</li>
+          </ul>        </div>
+      </div>
+      <div class="links">
+        
+        <a href="#slide1"><button>top</button></a>
+      </div>
+    </section>
+
+    <div id="root" class="hidden"></div>
+  </body>
+</html>
