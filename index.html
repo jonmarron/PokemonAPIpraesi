@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Gotta fetch'em all</title>
     <script src="app.js" defer></script>
-
+    <link rel="icon" href="assets/img/vite.svg" sizes="any" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,6 +27,7 @@
     ></script>
   </head>
   <body>
+    <div class="snap-out"></div>
     <div class="progress-pikachu">
       <img
         src="https://media.tenor.com/fSsxftCb8w0AAAAi/pikachu-running.gif"
@@ -44,7 +45,7 @@
           <em><strong>Jon</strong></em>
         </h2>
       </div>
-      <a href="#slide2"><button>next</button></a>
+      <!-- <a href="#slide2"><button>next</button></a> -->
     </section>
     <section class="agenda" id="slide2">
       <div class="content">
@@ -122,7 +123,7 @@
       </div>
     </section>
     <section class="live" id="slide5">
-        <iframe src="http://localhost:5173" frameborder="0"></iframe>
+        <iframe src="http://localhost:5173" scrolling="no" frameborder="0"></iframe>
         <div class="links">
             <a href="#slide4"
               ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
@@ -145,7 +146,7 @@
         </div>
     </section>
     <section class="live" id="slide7">
-        <iframe src="http://localhost:5173" frameborder="0"></iframe>
+        <iframe src="http://localhost:5173" scrolling="no" frameborder="0"></iframe>
         <div class="links">
             <a href="#slide6"
               ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
@@ -168,7 +169,7 @@
         </div>
     </section>
     <section class="live" id="slide9">
-        <iframe src="http://localhost:5173" frameborder="0"></iframe>
+        <iframe src="http://localhost:5173" scrolling="no" frameborder="0"></iframe>
         <div class="links">
             <a href="#slide8"
               ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
@@ -191,7 +192,7 @@
         </div>
     </section>
     <section class="live" id="slide11">
-        <iframe src="http://localhost:5173" frameborder="0"></iframe>
+        <iframe src="http://localhost:5173" scrolling="no" frameborder="0"></iframe>
         <div class="links">
             <a href="#slide10"
               ><button class="back"><i class="fa-solid fa-arrow-left"></i></button
@@ -199,7 +200,7 @@
             <a href="#slide12"><button>next</button></a>
           </div>
     </section>
-    <section class="code-2" id="slide12">
+    <section class="game" id="slide12">
       <div class="content" id="conclusion">
         <div>
           <h1>Conclusion</h1>
@@ -219,6 +220,10 @@
         
         <a href="#slide1"><button>top</button></a>
       </div>
+      <img id="pikachu-wave"
+        src="https://stephaniegalindo10.github.io/GifTastic/assets/images/transparent-pikachu-animated-gif-4.gif"
+        alt=""
+      />
     </section>
 
     <div id="root" class="hidden"></div>

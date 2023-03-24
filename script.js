@@ -22,18 +22,35 @@ document.addEventListener('DOMContentLoaded', function(){
     let allSections = document.querySelectorAll('section');
 
 
-    let count = 0;
+    let count = 1;
     window.addEventListener("keydown", (event) => {
-        event.preventDefault();
         if (event.keyCode === 33) {
+            event.preventDefault();
             count--     
+            if ( count === 12) {
+                document.querySelector('#pikachu-wave').classList.toggle('pikanimation');
+            } else {
+                document.querySelector('#pikachu-wave').classList.toggle('pikanimation');
+
+            }
             document.querySelector(`#slide${count}`).scrollIntoView();
-            
+            allIframes.forEach(iframe => {
+                iframe.src += ''
+            })
         }
         if (event.keyCode === 34) {
+            event.preventDefault();
             count++
+            if ( count === 12) {
+                document.querySelector('#pikachu-wave').classList.toggle('pikanimation');
+            }else {
+                document.querySelector('#pikachu-wave').classList.toggle('pikanimation');
+
+            }
             document.querySelector(`#slide${count}`).scrollIntoView();
-        
+            allIframes.forEach(iframe => {
+                iframe.src += ''
+            })
         }
         // do something
     })
